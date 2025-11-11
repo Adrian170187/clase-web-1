@@ -1,6 +1,8 @@
 /* Importar fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --primary-color: #e00d29; /* Color principal (rojo/rosa) */
     --secondary-color: #f7a6b5; /* Color secundario (rosa claro) */
@@ -16,22 +18,33 @@ body {
     padding: 0;
     text-align: center;
 }
-main {  
+main { 
+    background: url('https://imgs.search.brave.com/TpijM16uYVBoXqEseJrJanU71Ufhgo4Hq2iM7FEvAFg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/dmlkZW8vMjAyNC8w/Mi8xMy8yMDA1MzMt/OTEzMDIyMzMzX3Rp/bnkuanBn'); 
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-
+    font-family: 'Comic Neue';
 }
 header {
-    background-color: var(--primary-color);
+    background:url('https://imgs.search.brave.com/ZXFYzZKQm21CmNLyNrvsP_S6TnjZqMxk5U9WcGmHScU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/MTc0MDI3L2VzL2Zv/dG8vc2t5LWF0LW5p/Z2h0LmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz05ZlBmenB4/ZFdyZ3hhaDN6WG5o/ZzJqVGk0ZXdVU0xB/YzJkdWY5TFNSeXdz/PQ');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding: 40px 20px;
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     margin: 0;
 }
+header p{
+    font-size: xx-large;
 
+}
+header a{
+    color: var(--bg-color);
+}
 /* --- Estilos para la Imagen Solitaria Destacada --- */
 .featured-image img {
     max-width: 90%; 
@@ -51,7 +64,7 @@ header h1 {
 .carousel-container {
     position: relative;
     max-width: 600px;
-    margin: 50px auto;
+    margin: auto;
     overflow: hidden;
 
     /* ***** CORRECCIÓN: ELIMINAR EL RECUADRO ***** */
@@ -128,8 +141,8 @@ footer {
     color: white;
     padding: 10px; 
     position:relative;
-    bottom: 0;
-    width: 100%;
+    
+
 }
 
 /* --- DISEÑO RESPONSIVE --- */
