@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. Variables de Control
-    let counter = 0;
+    let counter = 0;  
     
     // Obtener el ancho de una sola imagen. Esto es seguro dentro de DOMContentLoaded.
     const size = images[0].clientWidth; 
